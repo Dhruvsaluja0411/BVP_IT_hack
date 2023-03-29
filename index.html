@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Homepage - Oasis</title>
+    <link rel="stylesheet" href="./auth.css" />
     <meta property="og:type" content="website">
     <meta name="description" content="A one-stop solution promoting self-care among students.">
     <link rel="icon" type="image/png" sizes="705x837" href="assets/img/Group%201.png">
@@ -259,7 +260,13 @@
         .rmore {
             align-items: center;
         }
-    
+        .log-btn{
+            background-color: #651fa6;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 60rem;
+    margin: 0.5rem;
+        }
         /*.card-inner{
             display: flex;
             flex-direction: column;
@@ -442,6 +449,16 @@
                     <li class="nav-item"><a class="nav-link" href="game.html">Games</a></li>
                 </ul>
                 <a class="btn btn-primary shadow" role="button" href="https://chat-342a1.web.app" style="background: var(--bs-success);--bs-primary: #139118;--bs-primary-rgb: 19,145,24;--bs-secondary: #e3823c;--bs-secondary-rgb: 227,130,60;border-color: var(--bs-green);">Forum</a>
+                <a class="log-btn" role="button" onclick="logout()">Log out</a>
+                <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="firebase.js"></script>
+    <script src="index.js"></script>
             </div>
         </div>
     </nav>
